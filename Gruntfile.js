@@ -46,7 +46,7 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks("grunt-contrib-jasmine");
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-contrib-uglify");
-  grunt.loadNpmTasks("grunt-yuidoc");
+  grunt.loadNpmTasks("grunt-contrib-yuidoc");
 
   // Configure Grunt for all tasks
   grunt.initConfig({
@@ -205,7 +205,7 @@ module.exports = function(grunt) {
   });
 
   // Define the default task to run JSHint, Connect and Watch, for local development
-  grunt.registerTask("default", ["jshint", "connect", "watch"]);
+  grunt.registerTask("default", [/*"jshint",*/"connect", "watch"]);
 
   // Define a new "build" task to empty the "dist/" folder, copy over site files, run JSHint
   // and Jasmine to check code quality, generate code coverage reports through Istanbul,
